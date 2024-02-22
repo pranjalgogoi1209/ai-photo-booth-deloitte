@@ -43,7 +43,16 @@ export default function CaptureImagePage({ setCapturedImg }) {
   };
   return (
     <CaptureImageWrapper>
-      <div className="captureImage">
+      <header>
+        <h1>Capture Your Image</h1>
+        <div className="logo">
+          <Link to={"/"}>
+            <img src={logo} alt="logo" />
+          </Link>
+        </div>
+      </header>
+
+      <main>
         <div className="webcamContainer">
           <div className="webcamParent">
             <Webcam
@@ -56,22 +65,18 @@ export default function CaptureImagePage({ setCapturedImg }) {
               <img src={img} alt="captured image" className="capturedImage" />
             )}
           </div>
-          <img src={frame} alt="frame" className="frame" />
+          {/* <img src={frame} alt="frame" className="frame" /> */}
         </div>
+
         <div className="capture">
-          <button onClick={e => handleCapture(e)} className="captureRetake">
+          <button onClick={e => handleCapture(e)} className="captureRetake btn">
             Capture
           </button>
-          <button onClick={handleSubmit} className="submit">
+          <button onClick={handleSubmit} className="submit btn">
             Submit
           </button>
         </div>
-      </div>
-      <div className="logo">
-        <Link to={"/"}>
-          <img src={logo} alt="logo" />
-        </Link>
-      </div>
+      </main>
       <ToastContainer />
     </CaptureImageWrapper>
   );
@@ -80,86 +85,70 @@ export default function CaptureImagePage({ setCapturedImg }) {
 const CaptureImageWrapper = styled.div`
   /* border: 1px solid red; */
   display: flex;
+  flex-direction: column;
+  gap: 2vw;
   justify-content: space-between;
-  /* captureImage starts here */
-  .captureImage {
+  main {
     /* border: 1px solid black; */
-    height: 100vh;
-    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 2vw;
-    padding-left: 10vw;
     .webcamContainer {
       position: relative;
-      height: 26.25vw;
-      width: 35vw;
-      background-color: #f1f1f1;
-      /* box-shadow: 1vw, 1vw, 1vw rgba(0, 0, 0, 0.5); */
-      /* border: 5px solid black; */
+      /* height: 26.25vw; */
+      width: 30vw;
+      background-color: #c72041;
+      border: 5px solid #c72041;
+      border-bottom: 0px solid #c72041;
+      border-radius: 1vw;
       .webcamParent {
         position: relative;
-        height: 100%;
+        /* height: 100%; */
         width: 100%;
         overflow: hidden;
+        /* border: 5px solid #212121; */
         #webcam {
-          width: 100%;
-          height: 100%;
+          border-radius: 1vw;
+          margin: 0 auto;
+          width: 100.3%;
+          /* height: 100.3%; */
           /* object-fit: cover; */
         }
         .capturedImage {
-          width: 100%;
-          height: 100%;
           position: absolute;
           top: 0;
           left: 0;
-          /* transform: scale(1.65, 1); */
+          width: 100.3%;
+          border-radius: 1vw;
+          /* height: 99%; */
         }
       }
-      .frame {
+      /*  .frame {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-      }
+      } */
     }
-
     .capture {
       /* border: 1px solid black; */
       display: flex;
       gap: 2vw;
-      button {
-        /* border: 0.13vw solid black; */
-        text-align: center;
-        width: 16vw;
-        border: none;
-        background-color: transparent;
-        outline: none;
-        padding: 0.2vw 2vw;
-        font-weight: 600;
-        font-size: 2.5vw;
-        border-radius: 0.6vw;
-        cursor: pointer;
-        transform: translateY(-0.1vw);
-        transition: all ease 0.5s;
-        box-shadow: 0.1vw 0.1vw 0.4vw rgba(0, 0, 0, 0.5);
-        &:hover {
-          box-shadow: none;
-          transform: translateY(0);
-        }
-      }
       .captureRetake {
-        background-color: #fcb017;
+        /* background-color: #fcb017; */
+        width: 10vw;
       }
       .submit {
         border: 0.1vw solid black;
         background-color: transparent;
+        color: #000;
       }
     }
   }
+
   /* captureImage ends here */
 
   .logo {

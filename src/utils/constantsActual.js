@@ -13,9 +13,9 @@ import {
   maleCard05,
   maleCard06,
   maleCard07,
-} from "../assets/avatar-page/";
+} from "../assets/actual-images/";
 
-export const femaleCards = [
+export const femaleCardsActual = [
   femaleCard01,
   femaleCard02,
   femaleCard03,
@@ -25,7 +25,7 @@ export const femaleCards = [
   femaleCard07,
 ];
 
-export const maleCards = [
+export const maleCardsActual = [
   maleCard01,
   maleCard02,
   maleCard03,

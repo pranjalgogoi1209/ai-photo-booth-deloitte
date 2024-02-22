@@ -31,12 +31,12 @@ export default function HomePage() {
       {/* main starts here */}
       <main>
         <div className="buttons">
-          <Link to={"/capture-image"}>
-            <button className="startNow">Start Now</button>
+          <Link to={"/select-gender"}>
+            <button className="startNow btn">Start Now</button>
           </Link>
-          <Link to={"https://techkilla.com/ai-photobooth"}>
+          {/* <Link to={"https://techkilla.com/ai-photobooth"}>
             <button className="knowMore">Know More</button>
-          </Link>
+          </Link> */}
         </div>
         <div className="images">
           <div className="firstContainer">
@@ -74,31 +74,6 @@ const HomeWrapper = styled.div`
   /* height: 100%; */
   /* border: 5px solid red; */
   /* header starts here */
-  header {
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: space-between;
-    h1 {
-      /* border: 1px solid black; */
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      font-size: 3.5vw;
-      font-weight: 600;
-      padding-left: 10vw;
-    }
-    .logo {
-      width: 10vw;
-      height: 10vw;
-      /* border: 1px solid red; */
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
-  /* header ends here */
 
   /* main starts here */
   main {
@@ -113,25 +88,8 @@ const HomeWrapper = styled.div`
       justify-content: center;
       align-items: center;
       gap: 1vw;
-      .startNow,
-      .knowMore {
-        border: none;
-        outline: none;
-        padding: 0.5vw 2vw;
-        font-weight: 600;
-        font-size: 1.5vw;
-        border-radius: 0.6vw;
-        cursor: pointer;
-        box-shadow: 0.1vw 0.1vw 0.4vw rgba(0, 0, 0, 0.5);
-        transform: translateY(-0.1vw);
-        transition: all ease 0.5s;
-        &:hover {
-          box-shadow: none;
-          transform: translateY(0);
-        }
-      }
       .startNow {
-        background-color: #fcb017;
+        /* background-color: #fcb017; */
       }
       .knowMore {
         border: 0.1vw solid black;

@@ -1,23 +1,30 @@
-import freedomFighter01 from "./freedom-fighter-01.png";
-import freedomFighter02 from "./freedom-fighter-02.png";
-import freedomFighter03 from "./freedom-fighter-03.png";
-import freedomFighter04 from "./freedom-fighter-04.png";
-import freedomFighter05 from "./freedom-fighter-05.png";
-import freedomFighter06 from "./freedom-fighter-06.png";
-import freedomFighter07 from "./freedom-fighter-07.png";
-import freedomFighter08 from "./freedom-fighter-08.png";
-import freedomFighter09 from "./freedom-fighter-09.png";
-import freedomFighter10 from "./freedom-fighter-10.jpg";
-
+import femaleCard01 from "././girls/femaleCard01.png";
+import femaleCard02 from "././girls/femaleCard02.png";
+import femaleCard03 from "././girls/femaleCard03.png";
+import femaleCard04 from "././girls/femaleCard04.png";
+import femaleCard05 from "././girls/femaleCard05.png";
+import femaleCard06 from "././girls/femaleCard06.png";
+import femaleCard07 from "././girls/femaleCard07.png";
+import maleCard01 from "././boys/maleCard01.png";
+import maleCard02 from "././boys/maleCard02.png";
+import maleCard03 from "././boys/maleCard03.png";
+import maleCard04 from "././boys/maleCard04.png";
+import maleCard05 from "././boys/maleCard05.png";
+import maleCard06 from "././boys/maleCard06.png";
+import maleCard07 from "././boys/maleCard07.png";
 export {
-  freedomFighter01,
-  freedomFighter02,
-  freedomFighter03,
-  freedomFighter04,
-  freedomFighter05,
-  freedomFighter06,
-  freedomFighter07,
-  freedomFighter08,
-  freedomFighter09,
-  freedomFighter10,
+  femaleCard01,
+  femaleCard02,
+  femaleCard03,
+  femaleCard04,
+  femaleCard05,
+  femaleCard06,
+  femaleCard07,
+  maleCard01,
+  maleCard02,
+  maleCard03,
+  maleCard04,
+  maleCard05,
+  maleCard06,
+  maleCard07,
 };

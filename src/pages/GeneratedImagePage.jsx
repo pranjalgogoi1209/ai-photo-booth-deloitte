@@ -10,26 +10,17 @@ export default function GeneratedImagePage({ generatedImage }) {
   //   const [isLoading, setIsLoading] = useState(false);
   generatedImage && console.log(generatedImage);
 
-  /* useEffect(() => {
-    if (generatedImage) {
-      setIsLoading(true);
-    }
-  }, [generatedImage]); */
-
   return (
     <GeneratedImageWrapper>
-      {/* header starts here */}
       <header>
-        <div className="title">
-          <h1>Download Your Image</h1>
-        </div>
+        <h1>Capture Your Image</h1>
         <div className="logo">
           <Link to={"/"}>
             <img src={logo} alt="logo" />
           </Link>
         </div>
       </header>
-      {/* header ends here */}
+
       {generatedImage ? (
         <div className="generatedImageContainer">
           <div className="generatedImageParent" ref={exportRef}>
@@ -63,53 +54,19 @@ export default function GeneratedImagePage({ generatedImage }) {
 }
 
 const GeneratedImageWrapper = styled.div`
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  /* border: 1px solid black; */
-
-  /* header starts here */
-  header {
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: space-between;
-    .title {
-      /* border: 1px solid red; */
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-left: 10vw;
-      h1 {
-        border: 0.15vw solid black;
-        padding: 0.1vw 0.4vw;
-        font-size: 3vw;
-        font-weight: 600;
-        border-radius: 0.7vw;
-      }
-    }
-    .logo {
-      width: 10vw;
-      height: 10vw;
-      /* border: 1px solid red; */
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
-  /* header ends here */
+  gap: 2vw;
   .generatedImageContainer {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
-    gap: 4vw;
-    margin-top: 3vw;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
     .generatedImageParent {
       /* border: 1px solid black; */
-      margin: 0 auto;
-      width: 40vh;
+      width: 20vw;
       position: relative;
       .generatedImage {
         width: 100%;
